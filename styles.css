@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcf4f4;
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 40px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #d48a8e;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.details {
+    background: #fff0f1;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.detail-item .icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+/* Estilos para el mapa */
+.map-container {
+    margin-top: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+main h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #d48a8e;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.gift-list {
+    list-style: none;
+    text-align: left;
+}
+
+.gift-item {
+    background: #fafafa;
+    border: 1px solid #eee;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.gift-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transform: translateY(-2px);
+}
+
+.gift-name {
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-select {
+    background-color: #d48a8e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    transition: background 0.3s ease;
+}
+
+.btn-select:hover {
+    background-color: #c0777b;
+}
+
+/* Regalo tachado */
+.gift-item.taken {
+    background-color: #f5f5f5;
+    opacity: 0.7;
+}
+
+.gift-item.taken .gift-name {
+    text-decoration: line-through;
+    color: #a0a0a0;
+}
+
+.gift-item.taken .btn-select {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Estilos para el Aporte Monetario */
+.monetary-contribution {
+    background: #fff0f1;
+    border-radius: 15px;
+    padding: 30px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.monetary-contribution h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.2rem;
+    color: #d48a8e;
+    margin-bottom: 10px;
+}
+
+.monetary-contribution p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.bank-details {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 20px;
+    border: 2px dashed #d48a8e;
+    display: inline-block;
+    width: 100%;
+}
+
+.bank-details p {
+    margin-bottom: 5px;
+    color: #4a4a4a;
+    font-size: 1rem;
+}
+
+.bank-details p:last-child {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Botón de reinicio temporal */
+.btn-reset {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #e0e0e0;
+    color: #555;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.85rem;
+    transition: background 0.3s;
+}
+
+.btn-reset:hover {
+    background: #ccc;
+}
+
+footer {
+    margin-top: 40px;
+    font-style: italic;
+    color: #888;
+}
