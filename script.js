@@ -1,15 +1,34 @@
-// Lista inicial de regalos
+// Lista inicial completa de regalos (con los nuevos agregados)
 const initialGifts = [
-    "Sartén", "Juego de cubiertos", "Bowl", "Vasos", "Pocillos",
-    "Sandwichera", "Platos", "Canasto para ropa", "Kit de limpieza",
-    "Juego de sábanas", "Kit de toallas de baño", "Recipientes herméticos",
-    "Salero y pimentero", "Organizador para baño/cocina"
+    "Sartén", 
+    "Juego de cubiertos", 
+    "Bowl", 
+    "Vasos", 
+    "Pocillos",
+    "Sandwichera", 
+    "Platos", 
+    "Canasto para ropa", 
+    "Kit de limpieza",
+    "Juego de sábanas", 
+    "Kit de toallas de baño", 
+    "Recipientes herméticos",
+    "Salero y pimentero", 
+    "Organizador para baño/cocina",
+    "Cuchillos de cocina",
+    "Utensilios de cocina (espátula, cucharón, pinzas)",
+    "Tabla para picar",
+    "Colador",
+    "Recipientes para guardar comida",
+    "Escurridor de platos",
+    "Espejo",
+    "Dispensadores para jabón"
 ];
 
-// Cargar regalos desde el navegador o crearlos por primera vez
+// Cargar regalos desde el navegador
 let giftsData = JSON.parse(localStorage.getItem('regalosValu'));
 
-if (!giftsData) {
+// Si no existen, o si la cantidad de regalos es diferente a la lista inicial (para agregar los nuevos)
+if (!giftsData || Object.keys(giftsData).length !== initialGifts.length) {
     giftsData = {};
     initialGifts.forEach((gift, index) => {
         giftsData['item_' + index] = { name: gift, taken: false };
